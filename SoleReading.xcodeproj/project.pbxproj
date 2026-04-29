@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06CCAEFAE8FB2F31A4E98C94 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51786FD949DE95583F0D84 /* ResultView.swift */; };
+		124CBE2860B160732D5F25BA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C26C7D15013F1D4840131 /* HomeView.swift */; };
+		178C317F748350770800E674 /* ReflexologyZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D09C10B12545D110168FA /* ReflexologyZone.swift */; };
+		1895216A04CF34F278166651 /* FootSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B624DF52A5BA2C840A039 /* FootSelectionView.swift */; };
+		4B879B22EBA8F77ABB76F2B4 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FF24D42AE453493CC9CC8E /* AnalysisView.swift */; };
+		68B5FCE06419D83E95A04828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9B5B9100B9C06CB9E326097 /* Assets.xcassets */; };
+		6A0BA54C2FB8D905AB990B13 /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA789710879F7061331D39 /* AdBannerView.swift */; };
+		A240EEB2555152CF7683683E /* ImageAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D78EA8012D0C000695D93A /* ImageAnalyzer.swift */; };
+		AE12D9D7985A3FCD24814EF8 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4497BC95F3BE7591E026E7A8 /* PrivacyInfo.xcprivacy */; };
+		B4D08B2B489C5E4EC0042AC5 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 4D99DE97C8638AF6C2F25485 /* GoogleMobileAds */; };
+		E65CF4C59AB5DB4A9A465CF5 /* SoleReadingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311BB55DA6F7726A06554E3A /* SoleReadingApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		105D09C10B12545D110168FA /* ReflexologyZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexologyZone.swift; sourceTree = "<group>"; };
+		196B624DF52A5BA2C840A039 /* FootSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootSelectionView.swift; sourceTree = "<group>"; };
+		311BB55DA6F7726A06554E3A /* SoleReadingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoleReadingApp.swift; sourceTree = "<group>"; };
+		3479EA4997B3BB4051208E77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4497BC95F3BE7591E026E7A8 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		58EA75C2F0E346BC00EDA8E2 /* SoleReading.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SoleReading.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBA789710879F7061331D39 /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
+		75D78EA8012D0C000695D93A /* ImageAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnalyzer.swift; sourceTree = "<group>"; };
+		AF51786FD949DE95583F0D84 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		B9B5B9100B9C06CB9E326097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6FF24D42AE453493CC9CC8E /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
+		DA3C26C7D15013F1D4840131 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B64C7DF1ADC5B7DB2CBE6E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D08B2B489C5E4EC0042AC5 /* GoogleMobileAds in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BF43B8069DBB3ADA5D8C98F /* SoleReading */ = {
+			isa = PBXGroup;
+			children = (
+				B9B5B9100B9C06CB9E326097 /* Assets.xcassets */,
+				3479EA4997B3BB4051208E77 /* Info.plist */,
+				4497BC95F3BE7591E026E7A8 /* PrivacyInfo.xcprivacy */,
+				311BB55DA6F7726A06554E3A /* SoleReadingApp.swift */,
+				BD651B1A112714C7558FA2F5 /* Models */,
+				6070D6F01DC53B11219C7CD6 /* Services */,
+				630613E3119E290713CEC19B /* Views */,
+			);
+			path = SoleReading;
+			sourceTree = "<group>";
+		};
+		6070D6F01DC53B11219C7CD6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				75D78EA8012D0C000695D93A /* ImageAnalyzer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		630613E3119E290713CEC19B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6DBA789710879F7061331D39 /* AdBannerView.swift */,
+				C6FF24D42AE453493CC9CC8E /* AnalysisView.swift */,
+				196B624DF52A5BA2C840A039 /* FootSelectionView.swift */,
+				DA3C26C7D15013F1D4840131 /* HomeView.swift */,
+				AF51786FD949DE95583F0D84 /* ResultView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		639A22CF35EC844E79060F12 = {
+			isa = PBXGroup;
+			children = (
+				3BF43B8069DBB3ADA5D8C98F /* SoleReading */,
+				E3408B2F544984B0856A9EFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD651B1A112714C7558FA2F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				105D09C10B12545D110168FA /* ReflexologyZone.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E3408B2F544984B0856A9EFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58EA75C2F0E346BC00EDA8E2 /* SoleReading.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFB77000C7ECD2D7BD067465 /* SoleReading */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5956676C577C7E19C1EEDBB9 /* Build configuration list for PBXNativeTarget "SoleReading" */;
+			buildPhases = (
+				4D2EA660341DB3E273100357 /* Sources */,
+				959C9859FC101DC8DCF45799 /* Resources */,
+				8B64C7DF1ADC5B7DB2CBE6E2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoleReading;
+			packageProductDependencies = (
+				4D99DE97C8638AF6C2F25485 /* GoogleMobileAds */,
+			);
+			productName = SoleReading;
+			productReference = 58EA75C2F0E346BC00EDA8E2 /* SoleReading.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16EBBD8E515E6B879E57037A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					AFB77000C7ECD2D7BD067465 = {
+						DevelopmentTeam = 83VGKGSQUH;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3D5F5C5756887143EE3BB6BC /* Build configuration list for PBXProject "SoleReading" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 639A22CF35EC844E79060F12;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B9C9B3FB97BAA2A6F1F2DA8C /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E3408B2F544984B0856A9EFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFB77000C7ECD2D7BD067465 /* SoleReading */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		959C9859FC101DC8DCF45799 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B5FCE06419D83E95A04828 /* Assets.xcassets in Resources */,
+				AE12D9D7985A3FCD24814EF8 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D2EA660341DB3E273100357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0BA54C2FB8D905AB990B13 /* AdBannerView.swift in Sources */,
+				4B879B22EBA8F77ABB76F2B4 /* AnalysisView.swift in Sources */,
+				1895216A04CF34F278166651 /* FootSelectionView.swift in Sources */,
+				124CBE2860B160732D5F25BA /* HomeView.swift in Sources */,
+				A240EEB2555152CF7683683E /* ImageAnalyzer.swift in Sources */,
+				178C317F748350770800E674 /* ReflexologyZone.swift in Sources */,
+				06CCAEFAE8FB2F31A4E98C94 /* ResultView.swift in Sources */,
+				E65CF4C59AB5DB4A9A465CF5 /* SoleReadingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0C7DE37F9524C3A0E06FE8CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		24F3CD497811EE3AA22E596D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4889B6C714DDAA9DDFC3F373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 83VGKGSQUH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SoleReading/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amasaki.SoleReading;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		967018897AFC58AAE64D69F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 83VGKGSQUH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SoleReading/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amasaki.SoleReading;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D5F5C5756887143EE3BB6BC /* Build configuration list for PBXProject "SoleReading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C7DE37F9524C3A0E06FE8CD /* Debug */,
+				24F3CD497811EE3AA22E596D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5956676C577C7E19C1EEDBB9 /* Build configuration list for PBXNativeTarget "SoleReading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				967018897AFC58AAE64D69F4 /* Debug */,
+				4889B6C714DDAA9DDFC3F373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B9C9B3FB97BAA2A6F1F2DA8C /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D99DE97C8638AF6C2F25485 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9C9B3FB97BAA2A6F1F2DA8C /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 16EBBD8E515E6B879E57037A /* Project object */;
+}
