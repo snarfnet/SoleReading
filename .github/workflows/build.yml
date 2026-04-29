@@ -12,15 +12,28 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Show Xcode version
-      run: xcodebuild -version
+    - name: Select Xcode 26
+      run: |
+        XCODE_APP=$(ls /Applications/ | grep -E "^Xcode_2[6-9]|^Xcode_[3-9][0-9]" | sort -V | tail -1)
+        if [ -n "$XCODE_APP" ]; then
+          sudo xcode-select -s "/Applications/$XCODE_APP"
+          echo "Selected: $XCODE_APP"
+        else
+          echo "Xcode 26+ not found. Available:"
+          ls /Applications/Xcode*
+          XCODE_APP=$(ls /Applications/ | grep "^Xcode_" | sort -V | tail -1)
+          sudo xcode-select -s "/Applications/$XCODE_APP"
+        fi
+        xcodebuild -version
 
     - name: Install XcodeGen
       run: brew install xcodegen
 
     - name: Set build number
       run: |
-        sed -i "" "s/CURRENT_PROJECT_VERSION: [0-9]*/CURRENT_PROJECT_VERSION: ${{ github.run_number }}/" project.yml
+        BUILD_NUM=$(( ${{ github.run_number }} + 10 ))
+        echo "BUILD_NUM=$BUILD_NUM" >> $GITHUB_ENV
+        sed -i "" "s/CURRENT_PROJECT_VERSION: [0-9]*/CURRENT_PROJECT_VERSION: $BUILD_NUM/" project.yml
 
     - name: Generate Xcode project
       run: xcodegen generate
@@ -85,4 +98,4 @@ jobs:
       run: pip3 install PyJWT requests
 
     - name: Submit for Review
-      run: python3 scripts/submit.py ${{ github.run_number }}
+      run: python3 scripts/submit.py ${{ env.BUILD_NUM }}
