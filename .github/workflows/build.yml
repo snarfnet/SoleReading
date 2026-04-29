@@ -46,6 +46,7 @@ jobs:
       run: |
         mkdir -p ~/.appstoreconnect/private_keys
         echo "$ASC_API_KEY_CONTENT" > ~/.appstoreconnect/private_keys/AuthKey_WDXGY9WX55.p8
+        cp ~/.appstoreconnect/private_keys/AuthKey_WDXGY9WX55.p8 /tmp/asc_key.p8
 
     - name: Build Archive
       run: |
@@ -58,3 +59,9 @@ jobs:
     - name: Upload to App Store Connect
       run: |
         xcrun altool --upload-app           -f build/export/SoleReading.ipa           --type ios           --apiKey WDXGY9WX55           --apiIssuer 2be0734f-943a-4d61-9dc9-5d9045c46fec
+
+    - name: Install PyJWT
+      run: pip3 install PyJWT requests
+
+    - name: Submit for Review
+      run: python3 scripts/submit.py ${{ github.run_number }}
