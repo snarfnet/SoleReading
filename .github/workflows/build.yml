@@ -35,7 +35,7 @@ jobs:
         security default-keychain -s build.keychain
         security unlock-keychain -p "$KEYCHAIN_PASSWORD" build.keychain
         security set-keychain-settings -t 3600 -u build.keychain
-        echo "$CERT_BASE64" | base64 --decode > cert.p12
+        echo "$CERT_BASE64" | base64 -D > cert.p12
         security import cert.p12 -k build.keychain -P "$CERT_PASSWORD" -T /usr/bin/codesign
         security set-key-partition-list -S apple-tool:,apple: -s -k "$KEYCHAIN_PASSWORD" build.keychain
         rm cert.p12
@@ -45,7 +45,7 @@ jobs:
         ASC_API_KEY_CONTENT: ${{ secrets.ASC_API_KEY_CONTENT }}
       run: |
         mkdir -p ~/.appstoreconnect/private_keys
-        echo "$ASC_API_KEY_CONTENT" | base64 --decode > ~/.appstoreconnect/private_keys/AuthKey_WDXGY9WX55.p8
+        echo "$ASC_API_KEY_CONTENT" | base64 -D > ~/.appstoreconnect/private_keys/AuthKey_WDXGY9WX55.p8
         cp ~/.appstoreconnect/private_keys/AuthKey_WDXGY9WX55.p8 /tmp/asc_key.p8
 
     - name: Build Archive
