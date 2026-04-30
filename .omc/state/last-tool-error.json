@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"gh repo edit snarfnet/SoleReading --visibility public\",\"description\":\"Set SoleReading repo to public\"}",
+  "error": "Exit code 1\nuse of --visibility flag requires --accept-visibility-change-consequences flag\n\nUsage:  gh repo edit [<repository>] [flags]\n\nFlags:\n      --accept-visibility-change-consequences    Accept the consequences of changing the repository visibility\n      --add-topic strings                        Add repository topic\n      --allow-forking                            Allow forking of an organization repository\n      --allow-update-branch                      Allow a pull request head branch ...",
+  "timestamp": "2026-04-30T00:46:33.909Z",
+  "retry_count": 1
+}

@@ -1,0 +1,118 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1777513419329,
+  "projectRoot": "C:\\Users\\Windows\\SoleReading",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "scripts"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "screenshots": {
+      "path": "screenshots",
+      "purpose": null,
+      "fileCount": 8,
+      "lastAccessed": 1777513419279,
+      "keyFiles": [
+        "ss1.png",
+        "ss_foot.png",
+        "ss_footsel.png",
+        "ss_footsel_65.png",
+        "ss_foot_65.png"
+      ]
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 1,
+      "lastAccessed": 1777513419280,
+      "keyFiles": [
+        "submit.py"
+      ]
+    },
+    "SoleReading": {
+      "path": "SoleReading",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1777513419281,
+      "keyFiles": [
+        "Info.plist",
+        "PrivacyInfo.xcprivacy",
+        "SoleReadingApp.swift"
+      ]
+    },
+    "SoleReading.xcodeproj": {
+      "path": "SoleReading.xcodeproj",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1777513419282,
+      "keyFiles": [
+        "project.pbxproj"
+      ]
+    },
+    "SoleReading\\Models": {
+      "path": "SoleReading\\Models",
+      "purpose": "Data models",
+      "fileCount": 1,
+      "lastAccessed": 1777513419285,
+      "keyFiles": [
+        "ReflexologyZone.swift"
+      ]
+    },
+    "SoleReading\\Services": {
+      "path": "SoleReading\\Services",
+      "purpose": "Business logic services",
+      "fileCount": 1,
+      "lastAccessed": 1777513419286,
+      "keyFiles": [
+        "ImageAnalyzer.swift"
+      ]
+    },
+    "SoleReading\\Views": {
+      "path": "SoleReading\\Views",
+      "purpose": "View templates",
+      "fileCount": 5,
+      "lastAccessed": 1777513419287,
+      "keyFiles": [
+        "AdBannerView.swift",
+        "AnalysisView.swift",
+        "FootSelectionView.swift"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "project.yml",
+      "accessCount": 1,
+      "lastAccessed": 1777513457032,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}
