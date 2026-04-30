@@ -42,11 +42,22 @@ r = api('PATCH', f'/builds/{build_id}',
     json={'data': {'type': 'builds', 'id': build_id, 'attributes': {'usesNonExemptEncryption': False}}})
 print(f'Export compliance: {r.status_code}')
 
-# Get draft version
-r = api('GET', f'/apps/{APP_ID}/appStoreVersions?filter[appStoreState]=PREPARE_FOR_SUBMISSION')
+# Find version - check all states
+version_id = None
+version_state = None
+r = api('GET', f'/apps/{APP_ID}/appStoreVersions?filter[platform]=IOS&limit=1')
 data = r.json()
-if not data.get('data'):
-    print('No draft version found. Creating new version...')
+if data.get('data'):
+    version_id = data['data'][0]['id']
+    version_state = data['data'][0]['attributes']['appStoreState']
+    print(f'Found version: {version_id} state={version_state}')
+
+if version_state in ('WAITING_FOR_REVIEW', 'IN_REVIEW'):
+    print(f'Already in review ({version_state}). Nothing to do.')
+    sys.exit(0)
+
+if not version_id or version_state in ('READY_FOR_DISTRIBUTION',):
+    print('Creating new version...')
     r = api('POST', '/appStoreVersions', json={
         'data': {
             'type': 'appStoreVersions',
@@ -58,9 +69,9 @@ if not data.get('data'):
         print(f'Failed to create version: {r.text[:300]}')
         sys.exit(1)
     version_id = r.json()['data']['id']
-else:
-    version_id = data['data'][0]['id']
-print(f'Version ID: {version_id}')
+    version_state = 'PREPARE_FOR_SUBMISSION'
+
+print(f'Version ID: {version_id} state={version_state}')
 
 # Assign build
 r = api('PATCH', f'/appStoreVersions/{version_id}/relationships/build',
@@ -68,7 +79,6 @@ r = api('PATCH', f'/appStoreVersions/{version_id}/relationships/build',
 print(f'Build assigned: {r.status_code}')
 
 # Submit via reviewSubmissions API
-# Step 1: Create reviewSubmission
 r = api('POST', '/reviewSubmissions', json={
     'data': {
         'type': 'reviewSubmissions',
@@ -81,7 +91,6 @@ if r.status_code != 201:
 submission_id = r.json()['data']['id']
 print(f'ReviewSubmission created: {submission_id}')
 
-# Step 2: Add version item
 r = api('POST', '/reviewSubmissionItems', json={
     'data': {
         'type': 'reviewSubmissionItems',
@@ -93,7 +102,6 @@ r = api('POST', '/reviewSubmissionItems', json={
 })
 print(f'Add item: {r.status_code}')
 
-# Step 3: Submit
 r = api('PATCH', f'/reviewSubmissions/{submission_id}', json={
     'data': {
         'type': 'reviewSubmissions',
