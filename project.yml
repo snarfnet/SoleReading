@@ -1,4 +1,8 @@
 name: SoleReading
+packages:
+  GoogleMobileAds:
+    url: https://github.com/googleads/swift-package-manager-google-mobile-ads
+    from: 11.0.0
 options:
   bundleIdPrefix: com.yourcompany
   deploymentTarget:
@@ -16,6 +20,9 @@ targets:
     deploymentTarget: "16.0"
     sources:
       - path: SoleReading
+    dependencies:
+      - package: GoogleMobileAds
+        product: GoogleMobileAds
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.amasaki.SoleReading
